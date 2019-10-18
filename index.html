@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+            <title>C++ Technical Documentation</title>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+            <link href="TDP.css" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+        </head>
+        <nav id="navbar">
+            <header>C++ Techincal Documentaion</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#overview">Overview</a></li>
+                <li><a class="nav-link" href="#object_oriented_programming">Object Oriented Programming</a></li>
+                <li><a class="nav-link" href="#standard_libraries">Standard Libraries</a></li>
+                <li><a class="nav-link" href="#the_ansi_standard">The ANSI Standard</a></li>
+                <li><a class="nav-link" href="#learning_C++">Learning C++</a></li>
+                <li><a class="nav-link" href="#use_of_c++">Use of C++</a></li>
+                <li><a class="nav-link" href="#basic_syntax">Basic Syntax</a></li>
+                <li><a class="nav-link" href="#data_types">Data Types</a></li>
+                <li><a class="nav-link" href="#variable_definition">Variable Definition</a></li>
+                <li><a class="nav-link" href="#operators">Operators</a></li>
+                <li><a class="nav-link" href="#loop_types">Loop Types</a></li>
+                <li><a class="nav-link" href="#decision_making">Decision Making</a></li>
+                <li><a class="nav-link" href="#functions">Functions</a></li>
+                <li><a class="nav-link" href="#resource_and_reference">Resource and Reference</a></li>
+            </ul>
+        </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+                <h1>What is C++</h1>
+                    <p>C++ is a middle-level programming language developed by Bjarne Stroustrup starting in 1979 at Bell Labs.
+                        C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. 
+                        This tutorial adopts a simple and practical approach to describe the concepts of C++.</p>
+                <h1>Prerequisites</h1>
+                    <p>Before you start practicing with various types of examples given in this tutorial,
+                        we are making an assumption that you are already aware of the basics of computer program and computer programming language.</p>
+                    <p>This Technical Document only offers some of the basic documentation and information about the C++ Language. 
+                        For further research please head over to the <a id="link" href="#resource">resource</a> section</p>
+        </section>
+
+        <section class="main-section" id="overview">
+            <header>Overview</header>
+            <article>
+                <p>C++ is a statically typed, compiled, general-purpose, case-sensitive, 
+                    free-form programming language that supports procedural, object-oriented, and generic programming.</p>
+                <p>C++ is regarded as a middle-level language, as it comprises a combination of both high-level and low-level language features.</p>    
+                <p>C++ was developed by Bjarne Stroustrup starting in 1979 at Bell Labs in Murray Hill, New Jersey, 
+                    as an enhancement to the C language and originally named C with Classes but later it was renamed C++ in 1983.</p>    
+                <p>C++ is a superset of C, and that virtually any legal C program is a legal C++ program.</p>      
+                <p>Note − A programming language is said to use static typing when type checking is performed during compile-time as opposed to run-time.</p>
+            </article>        
+        </section>
+
+        <section class="main-section" id="object_oriented_programming">
+            <header>Object Oriented Programming</header>
+            <article>
+                <p>C++ fully supports object-oriented programming, including the four pillars of object-oriented development −
+                    <ul>
+                    <li>Encapsulation</li>
+                        <li>Data hiding</li>
+                        <li>Inheritance</li>
+                        <li>Polymorphism</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="standard_libraries">
+            <header>Standard Libraries</header>
+            <article>
+                <p>Standard C++ consists of three important parts −
+                    <ul>
+                        <li>The core language giving all the building blocks including variables, data types and literals, etc.</li>
+                        <li>The C++ Standard Library giving a rich set of functions manipulating files, strings, etc.</li>
+                        <li>The Standard Template Library (STL) giving a rich set of methods manipulating data structures, etc.</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="the_ansi_standard">
+            <header>The ANSI Standard</header>
+            <article>
+                <p>The ANSI standard is an attempt to ensure that C++ is portable; 
+                    that code you write for Microsoft's compiler will compile without errors, using a compiler on a Mac, UNIX, a Windows box, or an Alpha.</p>
+                <p>The ANSI standard has been stable for a while, and all the major C++ compiler manufacturers support the ANSI standard.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="learning_C++">
+            <header>Learning C++</header>
+            <article>
+                <p>The most important thing while learning C++ is to focus on concepts. The purpose of learning a programming language is to become a better programmer; 
+                    that is, to become more effective at designing and implementing new systems and at maintaining old ones.</p>
+                <p>C++ supports a variety of programming styles. You can write in the style of Fortran, C, Smalltalk, etc., in any language. 
+                    Each style can achieve its aims effectively while maintaining runtime and space efficiency.</p>
+            </article>            
+        </section>
+
+        <section class="main-section" id="use_of_c++">
+            <header>Use of C++</header>
+            <article>
+                <p>C++ is used by hundreds of thousands of programmers in essentially every application domain.</p>
+                <p>C++ is being highly used to write device drivers and other software that rely on direct manipulation of hardware under realtime constraints.</p>
+                <p>C++ is widely used for teaching and research because it is clean enough for successful teaching of basic concepts.</p>
+                <p>Anyone who has used either an Apple Macintosh or a PC running Windows has indirectly used C++ because the primary user interfaces of these systems are written in C++.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="basic_syntax">
+            <header>Basic Syntax</header>
+            <article>
+                <p>When we consider a C++ program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what a class, object, methods, and instant variables mean.
+                    <ul>
+                        <li>Object − Objects have states and behaviors.
+                        Example: A dog has states - color, name, breed as well as behaviors - wagging, barking, eating. An object is an instance of a class.
+                        <li>Class − A class can be defined as a template/blueprint that describes the behaviors/states that object of its type support.
+                        <li>Methods − A method is basically a behavior. A class can contain many methods. 
+                        It is in methods where the logics are written, data is manipulated and all the actions are executed.
+                        <li>Instance Variables − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.
+                    </ul>
+                </p>
+
+                <p>Let us look at a simple code that would print the words Hello World.</p>
+                <div class="codeContainer">
+                    <code> #include <iostream>
+                        <br>using namespace std;
+                        <br>// main() is where program execution begins.
+                        <br>int main() 
+                        <br>{
+                        <br> cout &lt&lt "Hello World"; // prints Hello World
+                        <br>return 0;
+                        <br>}
+                    </code>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="data_types">
+            <header>Data Types</header>
+            <article>
+                <p>While writing program in any language, you need to use various variables to store various information. 
+                Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.
+                You may like to store information of various data types like character, wide character, integer, floating point, double floating point, boolean etc. 
+                Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory.</p>
+                <h1>Primitive Built-in Types</h1>
+                <div class="TwoColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div><h3>Type</h3></div>
+                            <div>Boolean</div> 
+                            <div>Character</div>
+                            <div>Integer</div>
+                            <div>Floating point</div>
+                            <div>Double Floating point</div>
+                            <div>Valueless</div>
+                            <div>Wide Character</div>
+                        </div>
+                        <div class="col">
+                            <div><h3>Keyword</h3></div>
+                            <div>bool</div>
+                            <div>char</div>
+                            <div>int</div>
+                            <div>float</div>
+                            <div>double</div>
+                            <div>void</div>
+                            <div>wchar_t</div>
+                        </div>
+                    </div>
+                </div>
+                <p>Several of the basic types can be modified using one or more of these type modifiers −
+                    <ul>
+                        <li>signed</li>
+                        <li>unsigned</li>
+                        <li>short</li>
+                        <li>long</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="variable_definition">
+            <header>Variable Definition</header>
+            <article>
+                <p>A variable definition tells the compiler where and how much storage to create for the variable.
+                A variable definition specifies a data type, and contains a list of one or more variables of that type as follows −</p>
+                <code>type variable_list;</code>
+                <p>Here, type must be a valid C++ data type including char, w_char, int, float, double, bool or any user-defined object, etc., and 
+                variable_list may consist of one or more identifier names separated by commas. Some valid declarations are shown here −</p>
+                <div class="codeContainer">
+                    <code>int   i, j, k;
+                        <br>char   c, ch;
+                        <br>float  f, salary;
+                        <br>double d;
+                    </code>
+                </div>
+                <p>The line int i, j, k; both declares and defines the variables i, j and k; which instructs the compiler to create variables named i, j and k of type int.</p>
+                <p>Variables can be initialized (assigned an initial value) in their declaration. 
+                The initializer consists of an equal sign followed by a constant expression as follows −</p>
+                <code>type variable_name = value;</code>
+                <p>Some examples are-</p>
+                <div class="codeContainer">
+                    <code>extern int d = 3, f = 5;// declaration of d and f. 
+                        <br>int d = 3, f = 5; // definition and initializing d and f. 
+                        <br>byte z = 22; // definition and initializes z. 
+                        <br>char x = 'x'; // the variable x has the value 'x'.
+                    </code>
+                </div>
+                <p>For definition without an initializer: 
+                variables with static storage duration are implicitly initialized with NULL (all bytes have the value 0); 
+                the initial value of all other variables is undefined.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="operators">
+            <header>Operators</header>
+            <article>
+                <p>An operator is a symbol that tells the compiler to perform specific mathematical or logical manipulations. 
+                C++ is rich in built-in operators and provide the following types of operators −</p>
+                    <ul>
+                        <li>Arithmetic Operators</li>
+                        <li>Relational Operators</li>
+                        <li>Logical Operators</li>
+                        <li>Bitwise Operators</li>
+                        <li>Assignment Operators</li>
+                        <li>Misc Operators</li>
+                    </ul>
+                <p>his chapter will examine the arithmetic, relational, logical, bitwise, assignment and other operators one by one.</p>
+                <h1>Arithmetic Operators</h1>
+                <p>There are following arithmetic operators supported by C++ language −</p>
+                <p>Assume variable A holds 10 and variable B holds 20, then −</p>
+                <div class="ThreeColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div id="fixed"><h3>Operator</h3></div>
+                            <div id="fixed">+</div> 
+                            <div id="fixed">-</div>
+                            <div id="fixed">*</div>
+                            <div id="fixed">/</div>
+                            <div id="fixed">% </div>
+                            <div id="fixed">++</div>
+                            <div id="fixed">--</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Description</h3></div>
+                            <div id="desc">Adds two operands</div> 
+                            <div id="desc">Subtracts second operand from the first</div>
+                            <div id="desc">Multiplies both operands</div>
+                            <div id="desc">Divides numerator by de-numerator</div>
+                            <div id="desc">Modulus Operator and remainder of after an integer division</div>
+                            <div id="desc">Increment operator, increases integer value by one</div>
+                            <div id="desc">Decrement operator, decreases integer value by one</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Example</h3></div>
+                            <div id="fixed">A + B will give 30</div> 
+                            <div id="fixed">A - B will give -10</div>
+                            <div id="fixed">A * B will give 200</div>
+                            <div id="fixed">B / A will give 2</div>
+                            <div id="fixed">B % A will give 0</div>
+                            <div id="fixed">A++ will give 11</div>
+                            <div id="fixed">A-- will give 9</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Relational Operators</h1>
+                <p>There are following relational operators supported by C++ language −</p>
+                <p>Assume variable A holds 10 and variable B holds 20, then −</p>
+                <div class="ThreeColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div id="fixed"><h3>Operator</h3></div>
+                            <div id="fixed">==</div> 
+                            <div id="fixed">!=</div>
+                            <div id="fixed">></div>
+                            <div id="fixed">&lt</div>
+                            <div id="fixed">&gt=</div>
+                            <div id="fixed">&lt=</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Description</h3></div>
+                            <div id="desc">Checks if the values of two operands are equal or not, if yes then condition becomes true.</div> 
+                            <div id="desc">Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.</div>
+                            <div id="desc">Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</div>
+                            <div id="desc">Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</div>
+                            <div id="desc">Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</div>
+                            <div id="desc">Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3 >Example</h3></div>
+                            <div id="fixed">(A == B) is not true.</div> 
+                            <div id="fixed">(A != B) is true.</div>
+                            <div id="fixed">(A > B) is not true.</div>
+                            <div id="fixed">(A &lt B) is true.</div>
+                            <div id="fixed">(A &gt= B) is not true.</div>
+                            <div id="fixed">(A &lt= B) is true.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Logical Operators</h1>
+                <p>There are following logical operators supported by C++ language −</p>
+                <p>Assume variable A holds 10 and variable B holds 20, then −</p>
+                <div class="ThreeColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div id="fixed"><h3>Operator</h3></div>
+                            <div id="fixed">&&</div> 
+                            <div id="fixed">||</div>
+                            <div id="fixed">|</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Description</h3></div>
+                            <div id="desc">Called Logical AND operator. If both the operands are non-zero, then condition becomes true.</div> 
+                            <div id="desc">Called Logical OR Operator. If any of the two operands is non-zero, then condition becomes true.	</div>
+                            <div id="desc">Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true, then Logical NOT operator will make false.</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Example</h3></div>
+                            <div id="fixed">(A && B) is false.</div> 
+                            <div id="fixed">(A || B) is true.</div>
+                            <div id="fixed">!(A && B) is true.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Bitwise Operators</h1>
+                <p>Bitwise operator works on bits and perform bit-by-bit operation. The truth tables for &, |, and ^ are as follows −</p>
+                <div class="bitwise_box">
+                    <div class="row">
+                        <div class="col">
+                           <div><h3>p</h3></div> 
+                            <div>0</div> 
+                            <div>0</div>
+                            <div>1</div>
+                            <div>1</div>
+                        </div>
+                        <div class="col">
+                            <div><h3>q</h3></div>
+                            <div>0</div> 
+                            <div>1</div>
+                            <div>1</div>
+                            <div>0</div>
+                        </div>
+                        <div class="col">
+                            <div><h3>p&q</h3></div>
+                            <div>0</div> 
+                            <div>0</div>
+                            <div>1</div>
+                            <div>1</div>
+                        </div>
+                        <div class="col">
+                            <div><h3>p|q</h3></div>
+                            <div>0</div> 
+                            <div>1</div>
+                            <div>1</div>
+                            <div>1</div>
+                        </div>
+                        <div class="col">
+                            <div><h3>p^q</h3></div>
+                            <div>0</div> 
+                            <div>1</div>
+                            <div>0</div>
+                            <div>1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Assume if A = 60; and B = 13; now in binary format they will be as follows −
+
+                       <br>   A = 0011 1100
+                        
+                       <br>  B = 0000 1101
+                        
+                       <br>   -----------------
+                        
+                       <br>   A&B = 0000 1100
+                        
+                       <br>   A|B = 0011 1101
+                        
+                       <br>    A^B = 0011 0001
+                        
+                       <br>   ~A  = 1100 0011
+                        
+                       <br>   The Bitwise operators supported by C++ language are listed in the following table. Assume variable A holds 60 and variable B holds 13, then −</p>
+
+                <div class="ThreeColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div id="fixed"><h3>Operator</h3></div>
+                            <div id="fixed">&</div> 
+                            <div id="fixed">|</div>
+                            <div id="fixed">^</div>
+                            <div id="fixed">~</div>
+                            <div id="fixed">&lt&lt</div>
+                            <div id="fixed">&gt&gt</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Description</h3></div>
+                            <div id="desc">Binary AND Operator copies a bit to the result if it exists in both operands.</div> 
+                            <div id="desc">Binary OR Operator copies a bit if it exists in either operand.</div>
+                            <div id="desc">Binary XOR Operator copies the bit if it is set in one operand but not both.</div>
+                            <div id="desc">Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.</div>
+                            <div id="desc">Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.</div>
+                            <div id="desc">Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed">h3>Example</h3></div>
+                            <div id="fixed">(A & B) will give 12 which is 0000 1100</div> 
+                            <div id="fixed">(A | B) will give 61 which is 0011 1101</div>
+                            <div id="fixed">(A ^ B) will give 49 which is 0011 0001</div>
+                            <div id="fixed">(~A ) will give -61 which is 1100 0011 in 2's complement form due to a signed binary number.</div>
+                            <div id="fixed"> A &lt&lt 2 will give 240 which is 1111 0000 </div>
+                            <div id="fixed">A >> 2 will give 15 which is 0000 1111</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Assignment Operators</h1>
+                <p>There are following assignment operators supported by C++ language −</p>
+                <div class="ThreeColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div id="fixed"><h3>Operator</h3></div>
+                            <div id="fixed">=</div> 
+                            <div id="fixed">+=</div>
+                            <div id="fixed">-=</div>
+                            <div id="fixed">*=</div>
+                            <div id="fixed">/=</div>
+                            <div id="fixed">%=</div>
+                            <div id="fixed">&lt&lt=</div> 
+                            <div id="fixed">&gt&gt=</div>
+                            <div id="fixed">&=</div>
+                            <div id="fixed">^=</div>
+                            <div id="fixed">|=</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Description</h3></div>
+                            <div id="desc">Simple assignment operator, Assigns values from right side operands to left side operand.</div> 
+                            <div id="desc">Add AND assignment operator, It adds right operand to the left operand and assign the result to left operand.</div>
+                            <div id="desc">Subtract AND assignment operator, It subtracts right operand from the left operand and assign the result to left operand.</div>
+                            <div id="desc">Multiply AND assignment operator, It multiplies right operand with the left operand and assign the result to left operand.</div>
+                            <div id="desc">Divide AND assignment operator, It divides left operand with the right operand and assign the result to left operand.</div>
+                            <div id="desc">Modulus AND assignment operator, It takes modulus using two operands and assign the result to left operand.</div> 
+                            <div id="desc">Left shift AND assignment operator.</div>
+                            <div id="desc">Right shift AND assignment operator.	</div>
+                            <div id="desc">Bitwise AND assignment operator.</div>
+                            <div id="desc">Bitwise exclusive OR and assignment operator.</div>
+                            <div id="desc">Bitwise inclusive OR and assignment operator.</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Example</h3></div>
+                            <div id="fixed">C = A + B will assign value of A + B into C</div> 
+                            <div id="fixed">C += A is equivalent to C = C + A</div>
+                            <div id="fixed">C -= A is equivalent to C = C - A</div>
+                            <div id="fixed">C *= A is equivalent to C = C * A</div>
+                            <div id="fixed">C /= A is equivalent to C = C / A</div>
+                            <div id="fixed">C %= A is equivalent to C = C % A</div>
+                            <div id="fixed">C &lt&lt= 2 is same as C = C &lt&lt 2</div>
+                            <div id="fixed">C >>= 2 is same as C = C >> 2</div>
+                            <div id="fixed">C &= 2 is same as C = C & 2</div>
+                            <div id="fixed">C ^= 2 is same as C = C ^ 2</div>
+                            <div id="fixed">C |= 2 is same as C = C | 2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Misc Operators</h1>
+                <p>The following table lists some other operators that C++ supports. −</p>
+                <div class="TwoColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div id="fixed"><h3>Sr.No</h3></div>
+                            <div id="fixed">1</div> 
+                            <div id="fixed">2</div>
+                            <div id="fixed">3</div>
+                            <div id="fixed">4</div>
+                            <div id="fixed">5</div>
+                            <div id="fixed">6</div>
+                            <div id="fixed">7</div> 
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Operator and description</h3></div>
+                            <div id="desc">sizeof
+                                <br>sizeof operator returns the size of a variable. For example, sizeof(a), where ‘a’ is integer, and will return 4.</div> 
+                            <div id="desc">Condition ? X : Y
+                                <br>Conditional operator (?). If Condition is true then it returns value of X otherwise returns value of Y.</div>
+                            <div id="desc">,
+                                <br>Comma operator causes a sequence of operations to be performed. The value of the entire comma expression is the value of the last expression of the comma-separated list.</div>
+                            <div id="desc">. (dot) and -> (arrow)
+                                <br>Member operators are used to reference individual members of classes, structures, and unions.</div>
+                            <div id="desc">Cast
+                                <br>Casting operators convert one data type to another. For example, int(2.2000) would return 2.</div>
+                            <div id="desc">&
+                                <br>Pointer operator & returns the address of a variable. For example &amp a; will give actual address of the variable.</div>
+                            <div id="desc">*
+                                <br>Pointer operator * is pointer to a variable. For example *var; will pointer to a variable var.</div> 
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Operators Precedence in C++</h1>
+                <p>Operator precedence determines the grouping of terms in an expression. 
+                This affects how an expression is evaluated. Certain operators have higher precedence than others; for example, 
+                the multiplication operator has higher precedence than the addition operator −</p>
+                <p>For example x = 7 + 3 * 2; here, x is assigned 13, 
+                not 20 because operator * has higher precedence than +, so it first gets multiplied with 3*2 and then adds into 7.</p>
+                <p>Here, operators with the highest precedence appear at the top of the table, 
+                those with the lowest appear at the bottom. Within an expression, higher precedence operators will be evaluated first.−</p>
+                <div class="ThreeColBox">
+                    <div class="row">
+                        <div class="col">
+                            <div id="fixed"><h3>Category</h3></div>
+                            <div id="fixed">Postfix </div> 
+                            <div id="fixed">Unary </div>
+                            <div id="fixed">Multiplicative </div>
+                            <div id="fixed">Additive </div>
+                            <div id="fixed">Shift  </div>
+                            <div id="fixed">Relational  </div>
+                            <div id="fixed">Equality</div> 
+                            <div id="fixed">Bitwise AND </div> 
+                            <div id="fixed">Bitwise XOR</div>
+                            <div id="fixed">Bitwise OR </div>
+                            <div id="fixed">Logical AND </div>
+                            <div id="fixed">Logical OR</div>
+                            <div id="fixed">Conditional</div>
+                            <div id="fixed">Assignment </div> 
+                            <div id="fixed">Comma</div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Description</h3></div>
+                            <div id="fixed">() [] -> . ++ - -  </div> 
+                            <div id="fixed">+ - ! ~ ++ - - (type)* & sizeof </div>
+                            <div id="fixed">* / % </div>
+                            <div id="fixed">+ - </div>
+                            <div id="fixed">&lt&lt >></div>
+                            <div id="fixed">&lt &lt= > >= </div>
+                            <div id="fixed">== !=</div> 
+                            <div id="fixed">& </div> 
+                            <div id="fixed">^</div>
+                            <div id="fixed">| </div>
+                            <div id="fixed">&& </div>
+                            <div id="fixed">|| </div>
+                            <div id="fixed">?: </div>
+                            <div id="fixed">= += -= *= /= %=>>= &lt&lt= &= ^= |=</div> 
+                            <div id="fixed">, </div>
+                        </div>
+                        <div class="col">
+                            <div id="fixed"><h3>Associativity</h3></div>
+                            <div id="fixed">Left to right </div> 
+                            <div id="fixed">Right to left </div>
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Left to right </div> 
+                            <div id="fixed">Left to right </div> 
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Left to right </div>
+                            <div id="fixed">Right to left </div>
+                            <div id="fixed">Right to left </div> 
+                            <div id="fixed">Right to left </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="loop_types">
+            <header>Loop Types</header>
+            <article>
+                <p>There may be a situation, when you need to execute a block of code several number of times.
+                     In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.</p>
+                <p>Programming languages provide various control structures that allow for more complicated execution paths.</p>   
+                <p>A loop statement allows us to execute a statement or group of statements multiple times and
+                    following is the general from of a loop statement in most of the programming languages −</p>
+                
+                 <div id="img_box">
+                     <img id="loop_img" src="https://static.wixstatic.com/media/ed2e53_bd01d2e7a977496782bbd4cbd8e566af~mv2.jpg" alt="loop_img">
+                 </div>           
+            </article>
+        </section>
+
+        <section class="main-section" id="decision_making">
+            <header>Decision Making</header>
+            <article>
+                <p>Decision making structures require that the programmer specify one or more conditions to be evaluated or tested by the program, 
+                    along with a statement or statements to be executed if the condition is determined to be true, and optionally, 
+                    other statements to be executed if the condition is determined to be false.</p>
+                <p>Following is the general form of a typical decision making structure found in most of the programming languages −</p>
+                <div id="img_box">
+                    <img id="dec_img" src="https://static.wixstatic.com/media/ed2e53_cb15d222df114810b6901f55b195269b~mv2.jpg" alt="decision_making_img">
+                </div>
+                <p>C++ programming language provides following types of decision making statements.</p>
+                <div class="TwoColBox">
+                        <div class="row">
+                            <div class="col">
+                                <div id="fixed"><h3>SR.NO</h3></div>
+                                <div id="fixed">1</div> 
+                                <div id="fixed">2</div>
+                                <div id="fixed">3</div>
+                                <div id="fixed">4</div>
+                                <div id="fixed">5</div>
+                            </div>
+                            <div class="col">
+                                <div id="fixed"><h3>Statement and Description</h3></div>
+                                <div id="fixed">if statement
+                                    <br>An ‘if’ statement consists of a boolean expression followed by one or more statements.</div>
+                                <div id="fixed">if...else statement
+                                    <br> An ‘if’ statement can be followed by an optional ‘else’ statement, which executes when the boolean expression is false.</div>
+                                <div id="fixed">switch statement
+                                    <br>A ‘switch’ statement allows a variable to be tested for equality against a list of values.</div>
+                                <div id="fixed">nested if statements
+                                    <br>You can use one ‘if’ or ‘else if’ statement inside another ‘if’ or ‘else if’ statement(s).</div>
+                                <div id="fixed">nested switch statements
+                                    <br>You can use one ‘switch’ statement inside another ‘switch’ statement(s).</div>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="functions">
+            <header>Functions</header>
+            <article>
+                <p>A function is a group of statements that together perform a task. Every C++ program has at least one function, which is main(), 
+                and all the most trivial programs can define additional functions.</p>
+                <p>You can divide up your code into separate functions. How you divide up your code among different functions is up to you, 
+                but logically the division usually is such that each function performs a specific task.</p>                   
+                <p>A function declaration tells the compiler about a function's name, return type, and parameters. 
+                A function definition provides the actual body of the function.</p>
+                <p>The C++ standard library provides numerous built-in functions that your program can call.
+                For example, function strcat() to concatenate two strings, function memcpy() to copy one memory location to another location and many more functions.</p>
+                <p>A function is known with various names like a method or a sub-routine or a procedure etc.</p>
+
+                <h1>Defining a Function</h1>
+                <p>The general form of a C++ function definition is as follows −</p>
+                <div class="codeContainer">
+                    <code>return_type function_name( parameter list ) {
+                            <br>body of the function
+                        <br>}</code>
+                </div>
+                <p>A C++ function definition consists of a function header and a function body. Here are all the parts of a function −
+                    <ul>
+                        <li>Return Type − A function may return a value. The return_type is the data type of the value the function returns. 
+                            Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void.</li>
+                        <li>Function Name − This is the actual name of the function. The function name and the parameter list together constitute the function signature.</li>
+                        <li>Parameters − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. 
+                            This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function.
+                            Parameters are optional; that is, a function may contain no parameters.</li>
+                        <li>Function Body − The function body contains a collection of statements that define what the function does.</li>
+                     </ul>
+                </p>
+
+                <p>Example</p>
+                <p>Following is the source code for a function called max(). This function takes two parameters num1 and num2 and return the biggest of both −</p>
+                <div class="codeContainer">
+                    <code>// function returning the max between two numbers
+                        <br>
+                        <br>int max(int num1, int num2) {
+                        <br> // local variable declaration
+                        <br>       int result;
+                        <br>    
+                        <br>       if (num1 > num2)
+                        <br>         result = num1;
+                        <br>      else
+                        <br>         result = num2;
+                        <br>    
+                        <br>      return result; 
+                        <br>   }
+                    </code>
+                </div>
+                <h1>Function Declarations</h1>
+                <p>A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.</p>
+                <p>A function declaration has the following parts −</p>
+                <div class="codeContainer">
+                    <code>return_type function_name( parameter list );</code>
+                </div>  
+                <p>For the above defined function max(), following is the function declaration −</p>
+                <div class="codeContainer">
+                    <code>int max(int num1, int num2);</code>
+                </div>
+                <p>Parameter names are not important in function declaration only their type is required, so following is also valid declaration −</p>
+                <div class="codeContainer">
+                    <code>int max(int, int);</code>
+                </div>
+                <p>unction declaration is required when you define a function in one source file and you call that function in another file. 
+                    In such case, you should declare the function at the top of the file calling the function.</p>
+                
+                <h1>Calling a Function</h1>
+                <p>While creating a C++ function, you give a definition of what the function has to do. To use a function, you will have to call or invoke that function.</p>
+
+                <p>When a program calls a function, program control is transferred to the called function. 
+                A called function performs defined task and when it’s return statement is executed or when its function-ending closing brace is reached, 
+                it returns program control back to the main program.</p>
+                
+                <p>To call a function, you simply need to pass the required parameters along with function name, and if function returns a value, 
+                then you can store returned value. For example </p>
+                
+                <div class="codeContainer">
+                    <code>#include <iostream>
+                            <br>using namespace std;
+                            <br> 
+                            <br> // function declaration
+                            <br> int max(int num1, int num2);
+                            <br> 
+                            <br> int main () {
+                            <br>   // local variable declaration:
+                            <br>   int a = 100;
+                            <br>   int b = 200;
+                            <br>   int ret;
+                            <br> 
+                            <br>   // calling a function to get max value.
+                            <br>   ret = max(a, b);
+                            <br>   cout &lt&lt "Max value is : " &lt&lt ret &lt&lt endl;
+                            <br> 
+                            <br>   return 0;
+                            <br>}
+                            <br> 
+                            <br>// function returning the max between two numbers
+                            <br>int max(int num1, int num2) {
+                            <br>   // local variable declaration
+                            <br>   int result;
+                            <br> 
+                            <br>   if (num1 > num2)
+                            <br>      result = num1;
+                            <br>   else
+                            <br>      result = num2;
+                            <br> 
+                            <br>   return result; 
+                            <br>}
+                    </code>
+                </div>
+                <p>I kept max() function along with main() function and compiled the source code. While running final executable, it would produce the following result −</p>
+                <div class="codeContainer">
+                <code>Max value is : 200</code>
+                </div>  
+            </article>
+        </section>
+
+        <section class="main-section" id="resource_and_reference">
+            <header>Resource and Reference</header>
+            <article>
+                <p>All documentations in this page are taken from <a id="link" href="https://www.tutorialspoint.com/cplusplus/cpp_functions.htm" target="_blank">TutorialsPoint</a></p>
+            </article>
+        </section>
+
+    </main>
+</html>
